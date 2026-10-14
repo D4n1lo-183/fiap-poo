@@ -4,15 +4,11 @@ import model.Tablet;
 
 public class SistemaPrincipal {
     static void main() {
-        Tablet minhaGarrafa = new Tablet();
-        minhaGarrafa.cor = "Azul";
-        minhaGarrafa.marca = "Apple";
+        Tablet meuTablet= new Tablet("azul" ,"Apple",500);
 // Fabriquei a segunda (Instância 2)
-        Tablet garrafaDoProfessor = new Tablet();
-        garrafaDoProfessor.cor = "Preto";
-        garrafaDoProfessor.marca = "Motorola";
-        System.out.println("Meu Tablet é: " + minhaGarrafa.cor);
-        System.out.println("O do professor é: " + garrafaDoProfessor.cor);
+        Tablet tabletDoProfessor = new Tablet("preto","Motorola",1);
+        System.out.println("Meu Tablet é: " + meuTablet.getCor());
+        System.out.println("O do professor é: " + tabletDoProfessor.getCor());
 
 
     }

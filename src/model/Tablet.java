@@ -1,9 +1,9 @@
 package model;
 
 public class Tablet {
-    public String cor;
-    public String marca;
-    public double armazenamento;
+    private String cor;
+    private String marca;
+    private double armazenamento;
 
     public String getCor() {
         return cor;
@@ -27,5 +27,11 @@ public class Tablet {
 
     public void setArmazenamento(double armazenamento) {
         this.armazenamento = armazenamento;
+    }
+
+    public Tablet(String cor, String marca, double armazenamento) {
+        this.setCor(cor);
+        this.setMarca(marca);
+        this.setArmazenamento(armazenamento);
     }
 }

@@ -1,14 +1,14 @@
 package model;
 
 public class Passageiro {
-    public String nome;
-    public String cpf; // Novo Atributo
-    public double saldo;
+    private String nome;
+    private String cpf; // Novo Atributo
+    private double saldo;
 
-    public Passageiro(String nome, String cpf) {
-        this.nome = nome;
-        this.cpf = cpf; // Novo Atributo
-        this.saldo = 0.00;
+    public Passageiro(String nome, String cpf, double saldo) {
+        this.setNome(nome);
+        this.setCpf(cpf);
+        this.setSaldo(0); // Todo mundo começa com zero!
     }
 
     public void adicionarSaldo(double valor) {
@@ -35,4 +35,38 @@ public class Passageiro {
         this.saldo -= custo;
         System.out.println("Viagem paga. Saldo restante: " + this.saldo);
     }
+
+
+    // Método para PEGAR o saldo (Leitura)
+    public double getSaldo() {
+        return this.saldo; // Apenas devolve o valor, não altera nada.
+    }
+
+    // Método para DEFINIR o saldo (Escrita com Regra de Negócio!)
+    private void setSaldo(double valor) {
+        if (valor >= 0) {
+            this.saldo = valor;
+        } else {
+            System.out.println("Erro de Segurança: Tentativa de definir saldo negativo bloqueada!");
+        }
+    }
+
+    // Faça o mesmo para o nome (sem regras complexas por enquanto)
+    public String getNome() {
+        return this.nome;
+    }
+
+    private void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    // Faça o mesmo para o cpf (sem regras complexas por enquanto)
+    public String getCpf() {
+        return this.cpf;
+    }
+
+    private void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
 }
