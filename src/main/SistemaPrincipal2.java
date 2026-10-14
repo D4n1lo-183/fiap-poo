@@ -2,6 +2,7 @@ package main;
 
 // Importamos a classe Passageiro para que o sistema a reconheça
 import model.Passageiro;
+import model.Veiculo;
 
 public class SistemaPrincipal2 {
 
@@ -29,6 +30,9 @@ public class SistemaPrincipal2 {
         passageiro1.pagarViagem(20.0); // Ana tem 50, vai sobrar 30.
 
         System.out.println("\nPagando viagem do passageiro 2 (Carlos)...");
-        passageiro2.pagarViagem(20.0); // Carlos tem 12.5. O sistema DEVE bloquear!
+        passageiro2.pagarViagem(20.0);// Carlos tem 12.5. O sistema DEVE bloquear!
     }
+
+    // TESTE 1: A forma correta (Nascimento legalizado)
+    Veiculo meuCarro = new Veiculo("ABC-1234", "Toyota Corolla");
 }
