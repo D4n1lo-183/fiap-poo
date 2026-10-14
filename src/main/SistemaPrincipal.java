@@ -13,6 +13,5 @@ public class SistemaPrincipal {
         System.out.println("Meu Tablet é: " + meuTablet.getCor() + " " + minhaPelicula.getMaterial());
         System.out.println("O do professor é: " + tabletDoProfessor.getCor() + " " + pelucilaDoProfessor.getMaterial());
 
-
     }
 }
