@@ -3,9 +3,10 @@ package main;
 // Importamos a classe Passageiro para que o sistema a reconheça
 import model.Passageiro;
 import model.Veiculo;
+import model.Viagem;
+
 
 public class SistemaPrincipal2 {
-
     public static void main(String[] args) {
 
         System.out.println("--- Iniciando o Sistema FiapRide --- \n");

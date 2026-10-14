@@ -1,14 +1,17 @@
 package main;
 
 import model.Tablet;
+import model.Pelicula;
 
 public class SistemaPrincipal {
     static void main() {
-        Tablet meuTablet= new Tablet("azul" ,"Apple",500);
+        Tablet meuTablet= new Tablet("Azul" ,"Apple",500);
+        Pelicula minhaPelicula = new Pelicula("Alta","Vidro");
 // Fabriquei a segunda (Instância 2)
-        Tablet tabletDoProfessor = new Tablet("preto","Motorola",1);
-        System.out.println("Meu Tablet é: " + meuTablet.getCor());
-        System.out.println("O do professor é: " + tabletDoProfessor.getCor());
+        Tablet tabletDoProfessor = new Tablet("Preto","Motorola",1);
+        Pelicula pelucilaDoProfessor = new Pelicula("Media","Plastico");
+        System.out.println("Meu Tablet é: " + meuTablet.getCor() + " " + minhaPelicula.getMaterial());
+        System.out.println("O do professor é: " + tabletDoProfessor.getCor() + " " + pelucilaDoProfessor.getMaterial());
 
 
     }
