@@ -2,11 +2,11 @@
 
 ## Informações do Aluno
 
-- **Nome:** Danilo Roberto
+- **Nome:** Danilo Roberto Anterio dos Santos
 - **RM:** 566966
 - **Turma:** 2CCPS
 - **Curso:** Ciência da Computação
-- **GitHub:** [@seu-usuario]
+- **GitHub:** @D4n1lo-183
 
 ## Descrição do Projeto
 Este projeto é o resultado prático dos conceitos abordados nas aulas de Programação Orientada a Objetos, aplicando pilares fundamentais como abstração, encapsulamento, herança, polimorfismo, interfaces e composição. A ideia central é modelar dispositivos eletrônicos (`Eletronico`, `Tablet`) e demonstrar como diferentes objetos podem ser tratados de forma genérica e integrada através de contratos em interfaces (`Notificavel`).
