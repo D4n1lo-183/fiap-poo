@@ -1,8 +1,6 @@
 package main;
 
-import model.Tablet;
-import model.Pelicula;
-
+import model.*;
 public class SistemaPrincipal {
     static void main() {
         Tablet meuTablet= new Tablet("Azul" ,"Apple",500, true);
@@ -13,5 +11,13 @@ public class SistemaPrincipal {
         System.out.println("Meu Tablet é: " + meuTablet.getCor() + " " + minhaPelicula.getMaterial());
         System.out.println("O do professor é: " + tabletDoProfessor.getCor() + " " + pelucilaDoProfessor.getMaterial());
 
+        System.out.println("\n--- Missão: Array de Interfaces (Polimorfismo com Notificavel) ---");
+        Notificavel[] centralDeAlertas = new Notificavel[3];
+        centralDeAlertas[0] = meuTablet;
+        centralDeAlertas[1] = tabletDoProfessor;
+
+        for (Notificavel emissor : centralDeAlertas) {
+            emissor.enviarNotificacao("Atualização de segurança crítica pendente.");
+        }
     }
 }
